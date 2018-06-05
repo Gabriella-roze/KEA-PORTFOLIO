@@ -1,13 +1,98 @@
-/**** GRID ****/
-.grid__home {
-
+/**** GENERAL ****/
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+ */
+body {
+  margin: 0px;
 }
+.hidden {
+  display: none;
+}
+a {
+  color: white;
+  font-size: 2em;
+  margin: 10px;
+  transition: 1s ease-out;
+}
+a:hover {
+  color: orange;
+}
+
+/**** GRID ****/
+
+/* grid areas */
+
+
+/**** HEADER ****/
+.header__home {
+  height: 47vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/**** FOOTER ****/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background: #6A955A;
+}
+
+
+/**** IMAGES ****/
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45vh;
+  flex-wrap: wrap;
+}
+.img__page {
+  width: 250px;
+  margin: 5px;
+}
+.img__page {
+  cursor: pointer;
+}
+
 
 
 /**** TEXT ****/
-#text__title--large {
+#text__greeting {
+
+}
+.text__title--large {
 
 }
 .text__title--small {
-  
+  text-align: center;
+}
+
+
+
+/**** LOGO ****/
+#logo__header {
+  max-width: 100px;
+
+}
+
+
+
+/**** PAGES ****/
+#page__about {
+
+}
+#page__portfolio {
+
+}
+#page__contact {
+
+}
+#pahe__home {
+
 }
