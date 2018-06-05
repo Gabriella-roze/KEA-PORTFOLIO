@@ -1,7 +1,8 @@
 /**** GENERAL ****/
 /*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Playfair Display', serif;
+font-family: ltc-bodoni-175, serif;
+font-style: normal;
+font-weight: 400;
  */
 body {
   margin: 0px;
@@ -18,18 +19,37 @@ a {
 a:hover {
   color: orange;
 }
+.margin__bottom--none {
+  margin-bottom: 0px;
+}
+p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .9em;
+  text-align: center;
+  color: #6A3937;
+}
+.background-leaves {
+  background: url('../images/bgr-leaves-8.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 /**** GRID ****/
 
 /* grid areas */
 
 
-/**** HEADER ****/
+/**** HEADERS ****/
 .header__home {
-  height: 47vh;
+  height: 52vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -40,7 +60,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 8vh;
-  background: #6A955A;
+  background: #F59C26;
 }
 
 
@@ -48,36 +68,57 @@ footer {
 .images {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 45vh;
+  align-items: flex-start;
+  min-height: 40vh;
   flex-wrap: wrap;
 }
 .img__page {
   width: 250px;
   margin: 5px;
-}
-.img__page {
   cursor: pointer;
+  filter: opacity(.5);
+  border-radius: 5px;
+  transition: .5s ease-in-out;
+}
+.img__page:hover {
+  transform: scale(1.2);
+  border-radius: 20px;
+  filter: opacity(1);
 }
 
 
 
 /**** TEXT ****/
 #text__greeting {
-
+  font-family: ltc-bodoni-175, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  color: #3B0D11;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .text__title--large {
-
+  font-family: ltc-bodoni-175, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  color: #3B0D11;
 }
 .text__title--small {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .8em;
   text-align: center;
+  color: #6A3937;
 }
 
 
 
 /**** LOGO ****/
 #logo__header {
-  max-width: 100px;
+  max-width: 60px;
 
 }
 
