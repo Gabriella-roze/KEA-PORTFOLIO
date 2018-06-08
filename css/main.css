@@ -112,7 +112,8 @@
 
 /**** FORM ****/
 ::placeholder {
-  color: #6B945D;
+  color: #D1CCDC;
+  font-style: italic;
 }
 .form {
   display: flex;flex-direction: column;
