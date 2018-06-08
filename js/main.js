@@ -10,34 +10,147 @@ const leafLeftMiddle = document.querySelector('.plant__left--middle');
 
 
 //pages
-const pageHome = document.getElementById('page__home');
-const pageAbout = document.getElementById('page__about');
-const pagePortfolio = document.getElementById('page__portfolio');
-const pageContact = document.getElementById('page__contact');
+const pageFrame = document.querySelector('.page__frame');
+const pageHome = document.querySelector('.page__home');
+const pageAbout = document.querySelector('.page__about');
+const pagePortfolio = document.querySelector('.page__portfolio');
+const pageContact = document.querySelector('.page__contact');
+
+//other
 const welcomeText = document.getElementById('text__greeting');
+const headerHome = document.querySelector('.header__home');
 
 
 //buttons
-const imgAbout = document.getElementById('img__page--about');
-const imgPortfolio = document.getElementById('img__page--portfolio');
-const imgContact = document.getElementById('img__page--contact');
-const btnExit = document.querySelector('.btn__exit');
-
 //menu
+const btnHome = document.getElementById('btn__home');
+const btnAbout = document.getElementById('btn__about');
+const btnPortfolio = document.getElementById('btn__portfolio');
+const btnContact = document.getElementById('btn__contact');
 
+//mobile menu
+const menuMobile = document.querySelector("#menu");
+const ul = document.querySelector("ul");
+const container = document.querySelector("#menu");
+const btnHomeMobile = document.getElementById('btn__home--mobile');
+const btnAboutMobile = document.getElementById('btn__about--mobile');
+const btnPortfolioMobile = document.getElementById('btn__portfolio--mobile');
+const btnContactMobile = document.getElementById('btn__contact--mobile');
 
 // FUNCTIONS
 
 //general
-
-//menu
-btnExit.addEventListener('click', function(){
-    pageHome.style.display = 'block';
-    pageAbout.style.display = "none";
-    pagePortfolio.style.display = "none";
+window.addEventListener('load', function(){
+  pageHome.style.display = 'initial';
+  pageAbout.style.display = 'none';
+  pagePortfolio.style.display = 'none';
+  pageContact.style.display = 'none';
+  currentPage(btnHome);
 })
 
-//page LEAVES COVER
+//menu
+btnHome.addEventListener('click', function(){
+  pageHome.style.display = 'initial';
+  pageAbout.style.display = 'none';
+  pagePortfolio.style.display = 'none';
+  pageContact.style.display = 'none';
+  currentRemove();
+  currentPage(btnHome);
+})
+btnAbout.addEventListener('click', function(){
+  pageHome.style.display = 'none';
+  pageAbout.style.display = 'grid';
+  pagePortfolio.style.display = 'none';
+  pageContact.style.display = 'none';
+  currentRemove();
+  currentPage(btnAbout);
+})
+btnPortfolio.addEventListener('click', function(){
+  pageHome.style.display = 'none';
+  pageAbout.style.display = 'none';
+  pagePortfolio.style.display = 'grid';
+  pageContact.style.display = 'none';
+  currentRemove();
+  currentPage(btnPortfolio);
+})
+btnContact.addEventListener('click', function(){
+  pageHome.style.display = 'none';
+  pageAbout.style.display = 'none';
+  pagePortfolio.style.display = 'none';
+  pageContact.style.display = 'grid';
+  currentRemove();
+  xxx();
+  currentPage(btnContact);
+})
+
+function xxx() {
+  console.log('xxxx');
+}
+
+function currentRemove() {
+  console.log('run');
+  btnHome.classList.remove('current');
+  btnAbout.classList.remove('current');
+  btnPortfolio.classList.remove('current');
+  btnContact.classList.remove('current');
+  btnHomeMobile.classList.remove('current');
+  btnAboutMobile.classList.remove('current');
+  btnPortfolioMobile.classList.remove('current');
+  btnContactMobile.classList.remove('current');
+}
+function currentPage(page) {
+  page.classList.add('current');
+}
+
+//menuMobile
+btnHomeMobile.addEventListener('click', function(){
+  pageHome.style.display = 'initial';
+  pageAbout.style.display = 'none';
+  pagePortfolio.style.display = 'none';
+  pageContact.style.display = 'none';
+  currentRemove();
+  currentPage(btnHomeMobile);
+  myFunction();
+})
+btnAboutMobile.addEventListener('click', function(){
+  pageHome.style.display = 'none';
+  pageAbout.style.display = 'grid';
+  pagePortfolio.style.display = 'none';
+  pageContact.style.display = 'none';
+  currentRemove();
+  currentPage(btnAboutMobile);
+  myFunction();
+})
+btnPortfolioMobile.addEventListener('click', function(){
+  pageHome.style.display = 'none';
+  pageAbout.style.display = 'none';
+  pagePortfolio.style.display = 'grid';
+  pageContact.style.display = 'none';
+  currentRemove();
+  currentPage(btnPortfolioMobile);
+  myFunction();
+})
+btnContactMobile.addEventListener('click', function(){
+  pageHome.style.display = 'none';
+  pageAbout.style.display = 'none';
+  pagePortfolio.style.display = 'none';
+  pageContact.style.display = 'grid';
+  currentRemove();
+  currentPage(btnContactMobile);
+  myFunction();
+})
+
+
+container.addEventListener("click", myFunction);
+
+function myFunction(e) {
+  //this.parentElement.classList.toggle("change");
+  menuMobile.classList.toggle("expand");    ul.classList.toggle("appear");
+}
+
+
+
+//page LEAF COVER
 window.addEventListener('load', function(){
   setTimeout(function(){
     leafBottomRight.classList.add('anim_leafBR');
@@ -46,8 +159,22 @@ window.addEventListener('load', function(){
     leafTopLeft.classList.add('anim_leafTL');
     leafTopMiddle.classList.add('anim_leafTM');
     leafLeftMiddle.classList.add('anim_leafLM');
+    pageFrame.classList.add('page__anim--on');
+    displayNone(leafBottomRight);
+    displayNone(leafBottomLeft);
+    displayNone(leafTopRight);
+    displayNone(leafBottomRight);
+    displayNone(leafTopLeft);
+    displayNone(leafTopMiddle);
+    displayNone(leafLeftMiddle);
   }, 1000);
 })
+function displayNone(object) {
+  setTimeout(function(){
+    object.style.display = 'none';
+  }, 1100)
+
+}
 
 //page HOME - language changer
 let counter = 0;
@@ -73,18 +200,3 @@ setInterval(function(){
       counter = 0;
   }
 }, 2800);
-
-// images directing to other pages
-imgAbout.addEventListener('click', function() {
-  pageHome.style.display = 'none';
-  pageAbout.style.display = 'grid';
-});
-imgPortfolio.addEventListener('click', function() {
-  pageHome.style.display = 'none';
-  pagePortfolio.style.display = 'grid';
-});
-imgContact.addEventListener('click', function() {
-  pageHome.style.display = 'none';
-  pageContact.style.display = 'grid';
-});
-//page about

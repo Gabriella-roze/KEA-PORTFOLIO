@@ -2,58 +2,69 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.typekit.net/miz7eew.css">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/miz7eew.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <title>KEA student portfolio</title>
   </head>
   <body class="background-leaves">
 
 <!-- Plant Cover -->
-    <!-- <img class="plant__top--right" src="images/frame1/f-palm1.png" alt="palm1">
+    <img class="plant__top--right" src="images/frame1/f-palm1.png" alt="palm1">
     <img class="plant__bottom--left" src="images/frame1/f-palm2.png" alt="palm1">
     <img class="plant__bottom--right" src="images/frame1/f-plant1.png" alt="palm1">
     <img class="plant__top--left" src="images/frame1/f-plant2.png" alt="palm1">
     <img class="plant__top--middle" src="images/frame1/f-plant1-2.png" alt="palm1">
-    <img class="plant__left--middle" src="images/frame1/f-plant1-3.png" alt="palm1"> -->
+    <img class="plant__left--middle" src="images/frame1/f-plant1-3.png" alt="palm1">
 
 <!--  -->
 
     <img class="branch__top" src="images/top-leaves.png" alt="A branch">
 
-    <!-- NEW HOME -->
+    <!-- ALL PAGES -->
     <div class="page__frame">
-        <div class="gmenu">
-          <img class="logo--small" src="images/logo/logo-monochromo.svg" alt="logo">
-        <div class="menu">
-          <a class="text__menu current" href="#"><i class="fas fa-home"></i> Home</a>
-          <a class="text__menu" href="#"><i class="fas fa-user-circle"></i> About me</a>
-          <a class="text__menu" href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
-          <a class="text__menu" href="#"><i class="fab fa-telegram-plane"></i> Contact me</a>
-        </div>
-        <i class="btn__exit" class="fas fa-times"></i>
+        <div class="gmenu menu">
+          <a id="btn__home" class="text__menu current" href="#"><i class="fas fa-home"></i> Home</a>
+          <a id="btn__about" class="text__menu" href="#"><i class="fas fa-user-circle"></i> About me</a>
+          <a  id="btn__portfolio" class="text__menu" href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
+          <a  id="btn__contact" class="text__menu" href="#"><i class="fab fa-telegram-plane"></i> Contact me</a>
       </div>
+      <label>
+        <div id="menu">
+            <div class="container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <ul>
+          <li>
+            <a id="btn__home--mobile" class="text__menu current" href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+             <a id="btn__about--mobile" class="text__menu" href="#"><i class="fas fa-user-circle"></i> About me</a>
+           </li>
+          <li>
+             <a  id="btn__portfolio--mobile" class="text__menu" href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
+           </li>
+           <li>
+              <a  id="btn__contact--mobile" class="text__menu" href="#"><i class="fab fa-telegram-plane"></i> Contact me</a>
+            </li>
+        </ul>
+      </label>
 
+      <!-- HOME -->
       <div class="page__home">
         <header class="header__home">
           <h1 id="text__greeting" class="text__align--center">< WELCOME /></h1>
           <p class="text__title--small text__align--center">Here you will find my portfolio with all the projects<br/>from the first semester of MMD programme,<br/>created by me<br/><strong>Gintare Gabriella Rozenaite!</strong></p>
+          <img class="logo--small" src="images/logo/logo-monochromo.svg" alt="logo">
         </header>
       </div>
 
-    </div>
-
-    <!-- ABOUT -->
-    <div class="page__about page__about--grid">
-      <div class="gmenu">
-        <img class="logo--small" src="images/logo/logo-monochromo.svg" alt="logo">
-        <div class="menu">
-          <a class="text__menu current" href="#"><i class="fas fa-user-circle"></i> About me</a>
-          <a class="text__menu" href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
-          <a class="text__menu" href="#"><i class="fab fa-telegram-plane"></i> Contact me</a>
-        </div>
-        <i class="btn__exit" class="fas fa-times"></i>
-      </div>
+      <!-- ABOUT -->
+      <div class="page__about page__about--grid">
       <div class="gimage">
         <img class=" img__me" src="images/hero-img-me.png" alt="Gabriella's picture">
       </div>
@@ -73,38 +84,209 @@
       </div>
     </div>
 
-    <!-- PORTFOLIO -->
-    <div id="page__portfolio" class="page__portfolio--grid">
-      <div class="gmenu">
-        <img class="logo--small" src="images/logo/logo-monochromo.svg" alt="logo">
-        <div class="menu">
-          <a class="text__menu" href="#"><i class="fas fa-user-circle"></i> About me</a>
-          <a class="text__menu current" href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
-          <a class="text__menu" href="#"><i class="fab fa-telegram-plane"></i> Contact me</a>
+      <!-- PORTFOLIO -->
+      <div class="page__portfolio--grid page__portfolio">
+        <div class="gport-title">
+          <h1 class="text__title--large">The Timeline of <br/>Multimedia Design Program<br/>1st semester Projects</h1>
         </div>
-        <i class="btn__exit" class="fas fa-times"></i>
-      </div>
-      <div class="gport-title">
-        <h1 class="text__title--large">The Timeline of <br/>Multimedia Design Program<br/>1st semester Projects</h1>
-      </div>
-      <div class="gport-skills">
-        <h3>Skills I obtained:</h3>
-        <p><i class="fas fa-code"></i> Interaction Development</p>
-        <p><i class="fas fa-pencil-alt"></i> Design and Visualization</p>
-        <p><i class="fas fa-comments"></i> Communication</p>
-        <p><i class="fas fa-handshake"></i> Business</p>
-      </div>
-      <div class="gsearch">
-        <p>See the projects acording to the timeline,<br/>or search by name:</p>
-        <i class="fas fa-search"></i>
-        <input value=''>
+        <div class="gport-skills">
+          <p class="text__subtitle--dark">Skills I obtained during the first semester:</p>
+          <p class="text__p--light"><i class="fas fa-code"></i> Interaction Development</p>
+          <p class="text__p--light"><i class="fas fa-pencil-alt"></i> Design and Visualization</p>
+          <p class="text__p--light"><i class="fas fa-comments"></i> Communication</p>
+          <p class="text__p--light"><i class="fas fa-handshake"></i> Business</p>
+        </div>
+
+        <div class="gprojects">
+
+          <div class="theme1">
+            <div class="theme">
+            </div>
+            <h3 class="text__subtitle--dark padding--left">Theme 01: Basic Web</h3>
+            <div class="icons--grey">
+              <p>Main focus areas:
+                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-code"></i>
+                <i class="fas fa-comments"></i>
+              </p>
+            </div>
+            <p class="text__details">Individual work:<br/>
+              I created my first responsive website about cubism, that had 4 pages and all of the pages had different grids.
+            </p>
+            <p class="text__details">Group work:
+              The first theme, for me, was the most life changing! I learned that group work is super hard (Who knew?!). By doing all the possible mistakes I learned so much about internal communication and self organisation. I the group of creating a redesigned website for a hotel, I was responsible for:<br/>
+              Sketch prototype<br/>
+              XD prototype<br/>
+              Coding the website<br/>
+            </p>
+            <div class="projects__examples">
+              <img class="example" src="images/projects/pr1.png" alt="responsive website image">
+              <img class="example" src="images/projects/pr2.png" alt="redesigned website image">
+            </div>
+            <a class="text__links" href="http://ggrdesign.com/KEA/01-web/responsive/index.html" target="_blank">01.04.01. Responsive website</a>
+            <a class="text__links" href="http://ggrdesign.com/KEA/01-web/redesign/index.html" target="_blank">01.05.03. Link to redesigned website</a>
+            <a class="text__links" href="pdf/presentation_redesign.pdf" target="_blank">01.05.04. Presentation</a>
+          </div>
+
+          <div class="theme2">
+            <div class="theme">
+            </div>
+            <h3 class="text__subtitle--dark padding--left">Theme 03: Basic Content</h3>
+            <div class="icons--grey">
+              <p>Main focus areas:
+                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-code"></i>
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-handshake"></i>
+              </p>
+            </div>
+
+            <p class="text__details">The projects in Basic content were challenging. As much as I love watching movies, in this theme I learned how hard it actually is to create something interesting to watch. To bring in a positive note, I must say that I learned many great things about story telling and keeping the user in mind while designing in general.
+            </p>
+            <p class="text__details">
+              At Story Telling Without Words each of the group members were working together on same tasks.
+            </p>
+            <p class="text__details">At the project for I Bike CPH  my responsibilities included:<br/>
+              Sketch prototype for website<br/>
+              Coding website<br/>
+              Helping with Shooting video material<br/>
+              Idea behind the video<br/>
+              Helping with storyboard creation<br/>
+              Acting<br/>
+            </p>
+            <div class="projects__examples">
+              <img class="example" src="images/projects/pr3.png" alt="responsive website image">
+              <img class="example" src="images/projects/pr4.png" alt="redesigned website image">
+            </div>
+            <a class="text__links" href="https://www.youtube.com/watch?v=LGQ7YRCYI0E" target="_blank">03.01.01 Tell a story without words</a>
+            <a class="text__links" href="pdf/storyboard_ibikecph.pdf" target="_blank">03.02.02 Storyboard</a>
+            <a class="text__links" href="http://ggrdesign.com/KEA/01-web/ibikecph/index.html" target="_blank">03.02.03 Link to website with embedded video</a>
+          </div>
+
+          <div class="theme3">
+            <div class="theme">
+            </div>
+            <h3 class="text__subtitle--dark padding--left">Theme 02: Basic Animation</h3>
+            <div class="icons--grey">
+              <p>Main focus areas:
+                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-code"></i>
+                <i class="fas fa-comments"></i>
+              </p>
+            </div>
+
+            <p class="text__details">In this theme I did some of the most fun projects yet! Created cute animations (my darlings) about penguins falling in love, made a logo - "piranga code" and made it "dance", learned that javaScript is not Java, but still, something super fun!
+            </p>
+            <p class="text__details">
+              For the Interactive animation we worked with everything together, but my main focus was:<br/>
+              Coding website
+            </p>
+            <p class="text__details">Project pool was a fun activity, we were in groups sharing all responsibilities together.
+            </p>
+            <p class="text__details">
+              Johnny Blue was a super fun project within a huge team. We had most of fun developing the idea and sharing the responsibilities. Using SCRUM method really worked for us staying on track and in line!<br/>
+              I worked on:<br/>
+              Idea developing<br/>
+              Story developing<br/>
+              Animation design<br/>
+              Website design<br/>
+              Coding
+            </p>
+
+            <div class="projects__examples">
+              <img class="example" src="images/projects/pr9.png" alt="responsive website image">
+              <img class="example" src="images/projects/pr5.png" alt="redesigned website image">
+              <img class="example" src="images/projects/pr6.png" alt="redesigned website image">
+              <img class="example" src="images/projects/pr7.png" alt="redesigned website image">
+              <img class="example" src="images/projects/pr14.png" alt="redesigned website image">
+              <img class="example" src="images/projects/pr8.png" alt="redesigned website image">
+            </div>
+            <a class="text__links" href="http://ggrdesign.com/KEA/anim/basic/" target="_blank">02.01.02 Link to simple animation</a>
+            <a class="text__links" href="pdf/2.2.1-gintare-rozenaite.pdf" target="_blank">02.03.02 Interactive Animation</a>
+            <a class="text__links" href="http://ggrdesign.com/KEA/anim/DandilionAnimation/" target="_blank">03.02.03 Link to website with embedded video</a>
+            <a class="text__links" href="http://ggrdesign.com/KEA/js/fly/" target="_blank">02.03.03 ProjectPool day 1</a>
+            <a class="text__links" href="http://ggrdesign.com/KEA/js/calc/" target="_blank">02.03.04 ProjectPool day 2</a>
+            <a class="text__links" href="pdf/storyboard_50shadesofblue.pdf" target="_blank">02.04.02 Story board</a>
+            <a class="text__links" href="pdf/experttest.pdf" target="_blank">02.05.01 Summary of expert test</a>
+            <a class="text__links" href="http://ggrdesign.com/KEA/js/johnnyBlue/index.html" target="_blank">02.05.02 Link to final interactive production</a>
+            <a class="text__links" href="https://www.youtube.com/watch?v=1WGmcj1EiNo&feature=youtu.be" target="_blank">02.05.03 Screen cast documentation</a>
+          </div>
+
+          <div class="theme4">
+            <div class="theme">
+            </div>
+            <h3 class="text__subtitle--dark padding--left">Theme 04: Basic UX</h3>
+            <div class="icons--grey">
+              <p>Main focus areas:
+                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-code"></i>
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-handshake"></i>
+              </p>
+            </div>
+            <p class="text__details">
+              Theme 4 was the most challenging regarding business part of the multimedia design.
+            </p>
+            <p class="text__details">
+              The main project - Socially, was the most demanding of all but in my opinion, the most professional one.
+            </p>
+            <p class="text__details">
+              In this project I participated in all of the aspects of it, but focused mostly on:<br/>
+              App sketch prototype<br/>
+              App XD prototype<br/>
+              UX and user testing<br/>
+              Design Documentation<br/>
+              Helped a lot on the website design<br/>
+              Helped a little on the website coding
+            </p>
+            <div class="projects__examples">
+              <img class="example" src="images/projects/pr10.png" alt="responsive website image">
+              <img class="example" src="images/projects/pr11.png" alt="redesigned website image">
+              <img class="example" src="images/projects/pr12.png" alt="responsive website image">
+              <img class="example" src="images/projects/pr13.png" alt="redesigned website image">
+            </div>
+            <a class="text__links" href="pdf/bmc.jpg" target="_blank">04.02.01: Business Model Canvas</a>
+            <a class="text__links" href="pdf/report_socially.pdf" target="_blank">04.03.01: Report</a>
+            <a class="text__links" href="pdf/design-dcumentation_socially.pdf" target="_blank">04.03.02: Design documentation</a>
+            <a class="text__links" href="http://www.ggrdesign.com/KEA/socially/" target="_blank">04.04.01: Link to the web prototype</a>
+            <a class="text__links" href="pdf/presentation_socially.pdf" target="_blank">04.04.02: Pitch presentation</a>
+
+          </div>
+
+        </div>
       </div>
 
-    </div>
-    <!-- CONTACT -->
-    <div id="page__contact">
+      <!-- CONTACT -->
+      <div class="page__contact page__contact--grid">
+        <div class="gcontact">
+          <h1 class="text__title--large">Hi,<br/>
+            Let's connect!</h1>
+          <p class="text__subtitle">Please leave your message here,<br/>
+            or find me on my social media </p>
+          <div class="social">
+            <i class="sicial__icon fab fa-instagram"></i>
+            <i class="sicial__icon fab fa-linkedin-in"></i>
+          </div>
 
-    </div>
+          <form class="form" action="https://formspree.io/g.rozenaite@gmail.com" method="post">
+            <input class="input--small" type="text" name="_replyto" placeholder="email">
+            <input class="input--small" type="text" name="name" placeholder="First name">
+            <input class="input--big" type="text" name="message" placeholder="Your message goes here">
+            <button type="submit"><i class="fab fa-telegram-plane"></i> Send</button>
+          </form>
+        </div>
+        <div class="">
+
+        </div>
+
+
+
+
+
+      </div>
+
+  </div>
+
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
