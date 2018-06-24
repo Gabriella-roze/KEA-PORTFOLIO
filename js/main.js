@@ -8,7 +8,6 @@ const leafTopLeft = document.querySelector('.plant__top--left');
 const leafTopMiddle = document.querySelector('.plant__top--middle');
 const leafLeftMiddle = document.querySelector('.plant__left--middle');
 
-
 //pages
 const pageFrame = document.querySelector('.page__frame');
 const pageHome = document.querySelector('.page__home');
@@ -22,6 +21,7 @@ const headerHome = document.querySelector('.header__home');
 
 
 //buttons
+
 //menu
 const btnHome = document.getElementById('btn__home');
 const btnAbout = document.getElementById('btn__about');
@@ -110,7 +110,7 @@ btnHomeMobile.addEventListener('click', function(){
   pageContact.style.display = 'none';
   currentRemove();
   currentPage(btnHomeMobile);
-  myFunction();
+  modileMenu();
 })
 btnAboutMobile.addEventListener('click', function(){
   pageHome.style.display = 'none';
@@ -119,7 +119,7 @@ btnAboutMobile.addEventListener('click', function(){
   pageContact.style.display = 'none';
   currentRemove();
   currentPage(btnAboutMobile);
-  myFunction();
+  modileMenu();
 })
 btnPortfolioMobile.addEventListener('click', function(){
   pageHome.style.display = 'none';
@@ -128,7 +128,7 @@ btnPortfolioMobile.addEventListener('click', function(){
   pageContact.style.display = 'none';
   currentRemove();
   currentPage(btnPortfolioMobile);
-  myFunction();
+  modileMenu();
 })
 btnContactMobile.addEventListener('click', function(){
   pageHome.style.display = 'none';
@@ -137,18 +137,16 @@ btnContactMobile.addEventListener('click', function(){
   pageContact.style.display = 'grid';
   currentRemove();
   currentPage(btnContactMobile);
-  myFunction();
+  modileMenu();
 })
 
 
-container.addEventListener("click", myFunction);
+container.addEventListener("click", modileMenu);
 
-function myFunction(e) {
+function modileMenu(e) {
   //this.parentElement.classList.toggle("change");
   menuMobile.classList.toggle("expand");    ul.classList.toggle("appear");
 }
-
-
 
 //page LEAF COVER
 window.addEventListener('load', function(){
@@ -173,7 +171,6 @@ function displayNone(object) {
   setTimeout(function(){
     object.style.display = 'none';
   }, 1100)
-
 }
 
 //page HOME - language changer
